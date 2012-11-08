@@ -354,7 +354,7 @@ def launch_download_daemon(oldpid, env):
     # versions will work
 
     downloader_path = (os.path.join(resources.app_root(),
-                                   "Miro_Downloader.exe"),) 
+                                   "Aurora_Downloader.exe"),) 
     return Popen(downloader_path, close_fds=True, env=environ)
 
 def exit_miro(return_code):
@@ -500,7 +500,7 @@ def get_plat_media_player_name_path():
     return (_('iTunes'), import_itunes_path(itunes_path))
 
 def miro_helper_program_info():
-    cmd_line = (os.path.join(resources.app_root(), 'Miro_Helper.exe'),)
+    cmd_line = (os.path.join(resources.app_root(), 'Aurora_Helper.exe'),)
     env = None
     return (cmd_line, env)
 

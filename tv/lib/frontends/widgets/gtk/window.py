@@ -638,7 +638,7 @@ class AboutDialog(Dialog):
 
     def on_contrib_link_event(self, texttag, widget, event, iter_):
         if event.type == gtk.gdk.BUTTON_PRESS:
-            resources.open_url('http://getmiro.com/donate/')
+            resources.open_url('http://www.aurora-downloader.com/donate/')
 
 type_map = {
     0: gtk.MESSAGE_WARNING,

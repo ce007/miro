@@ -157,18 +157,18 @@ def get_from_environ(key, default):
     return default
 
 default_guide = get_from_environ('DTV_CHANNELGUIDE_URL',
-                                 u'http://www.miroguide.com/')
+                                 u'http://guide.aurora-downloader.com/')
 default_guide_first_time = get_from_environ('DTV_CHANNELGUIDE_FIRST_TIME_URL',
-                                            u'http://www.miroguide.com/firsttime')
+                                            u'http://guide.aurora-downloader.com/firsttime')
 default_share = get_from_environ('DTV_SHARE_URL',
-                                 u'http://www.miroguide.com/share')
+                                 u'http://www.aurora-downloader.com/share')
 default_autoupdate = get_from_environ(
     'DTV_AUTOUPDATE_URL',
-    u'http://miro-updates.participatoryculture.org/democracy-appcast.xml')
+    u'http://update.aurora-downloader.com/aurora-appcast.xml')
 
 default_autoupdate_beta = get_from_environ(
     'DTV_AUTOUPDATE_BETA_URL',
-    u'http://miro-updates.participatoryculture.org/democracy-appcast-beta.xml')
+    u'http://update.aurora-downloader.com/aurora-appcast-beta.xml')
 
 
 CHANNEL_GUIDE_URL = Pref(key='ChannelGuideURL', default=default_guide,
@@ -191,7 +191,7 @@ AUTOUPDATE_URL    = Pref(key='AutoupdateURL',   default=default_autoupdate,
 AUTOUPDATE_BETA_URL = Pref(
     key='AutoupdateBetaURL', default=default_autoupdate_beta,
     platformSpecific=True)
-DONATE_URL        = Pref(key='DonateURL', default=u"http://www.getmiro.com/donate/",
+DONATE_URL        = Pref(key='DonateURL', default=u"http://www.aurora-downloader.com/donate/",
                          platformSpecific=False)
 TROUBLESHOOT_URL  = Pref(key='TroubleshootURL', default=u"http://manual.getmiro.com/troubleshooting.html",
                          platformSpecific=False)

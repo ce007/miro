@@ -175,7 +175,7 @@ class WindowsApplication(Application):
     def _get_icon_location(self):
         # we set the icon first (if available) so that it doesn't flash
         # on when the window is realized in Application.build_window()
-        icopath = os.path.join(resources.app_root(), "Miro.ico")
+        icopath = os.path.join(resources.app_root(), "Aurora.ico")
         if app.config.get(prefs.THEME_NAME) and app.config.get(options.WINDOWS_ICON):
             themeIcoPath = resources.theme_path(app.config.get(prefs.THEME_NAME),
                                                 app.config.get(options.WINDOWS_ICON))
@@ -187,7 +187,7 @@ class WindowsApplication(Application):
     def _get_exe_location(self):
             # We don't use the app name for the .exe, so branded
             # versions work
-            filename = os.path.join(resources.root(), "..", "Miro.exe")
+            filename = os.path.join(resources.root(), "..", "Aurora.exe")
             filename = os.path.normpath(filename)
             themeName = app.config.get(prefs.THEME_NAME)
             if themeName is not None:

@@ -31,6 +31,8 @@ tv/lib/frontends/widgets/infolist/infolist.c
 
 .DS_Store
 sandbox_*
+*.swp
+Thumbs.db
 
 docs/developer/_build/
 docs/developer/build/
